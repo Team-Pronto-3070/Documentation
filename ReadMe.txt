@@ -18,4 +18,5 @@ GetRawButton(10) Right Stick click
 
 Note: Axes have to be negative
 
-
+Encoder (4, 5) Right wheels (values negative)
+Encoder (2, 3) Left wheels
