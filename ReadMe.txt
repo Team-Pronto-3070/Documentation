@@ -18,5 +18,13 @@ GetRawButton(10) Right Stick click
 
 Note: Axes have to be negative
 
+RobotDrive(0, 1)
 Encoder (4, 5) Right wheels (values negative)
 Encoder (2, 3) Left wheels
+
+drive.setInvertedMotor(MotorType.kRearLeft, true);
+drive.setInvertedMotor(MotorType.kRearRight, false);
+-Put in robotInit to correct motors
+
+drive.arcadeDrive(-xbox.getRawAxis(4) , -xbox.getRawAxis(5));
+-Drive code
