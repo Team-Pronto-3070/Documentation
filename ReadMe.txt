@@ -1,5 +1,3 @@
-Documentation
-
 GetRawAxis(0) Left Stick X-axis
 GetRawAxis(1) Left Stcik Y-axis
 GetRawAxis(2) Left Trigger
