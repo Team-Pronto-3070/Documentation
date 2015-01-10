@@ -1,5 +1,5 @@
 GetRawAxis(0) Left Stick X-axis
-GetRawAxis(1) Left Stcik Y-axis
+GetRawAxis(1) Left Stick Y-axis
 GetRawAxis(2) Left Trigger
 GetRawAxis(3) Right Trigger
 GetRawAxis(4) Right Stick X-axis
@@ -15,3 +15,7 @@ GetRawButton(7) Back Button
 GetRawButton(8) Start Button
 GetRawButton(9) Left Stick click
 GetRawButton(10) Right Stick click
+
+Note: Axes have to be negative
+
+
