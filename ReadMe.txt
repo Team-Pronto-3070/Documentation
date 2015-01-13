@@ -22,6 +22,9 @@ RobotDrive(0, 1)
 Encoder (4, 5) Right wheels (values negative)
 Encoder (2, 3) Left wheels
 
+1ft = 1 -227
+      2 369.25	
+
 drive.setInvertedMotor(MotorType.kRearLeft, true);
 drive.setInvertedMotor(MotorType.kRearRight, false);
 -Put in robotInit to correct motors
