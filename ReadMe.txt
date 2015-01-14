@@ -22,8 +22,17 @@ RobotDrive(0, 1)
 Encoder (4, 5) Right wheels (values negative)
 Encoder (2, 3) Left wheels
 
-1ft = 1 -227
-      2 369.25	
+To equalize motor power, multiply left motor (0) by 1.25.
+
+1ft = Left Encoder (0) ~ -227
+      Right Encoder (1) ~ 369.25
+      
+Driving set distance using encoders:
+      Left: (-227 * FEET) + 80
+      Right: (369 * FEET) - 80
+      80 makes the distance more precise
+      
+      
 
 drive.setInvertedMotor(MotorType.kRearLeft, true);
 drive.setInvertedMotor(MotorType.kRearRight, false);
