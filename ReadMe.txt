@@ -27,6 +27,8 @@ To equalize motor power, multiply left motor (0) by 1.25.
 1ft = Left Encoder (0) ~ -227
       Right Encoder (1) ~ 369.25
       
+1 ft = ultrasonic = 0.112304
+      
 Driving set distance using encoders:
       Left: (-227 * FEET) + 80
       Right: (369 * FEET) - 80
