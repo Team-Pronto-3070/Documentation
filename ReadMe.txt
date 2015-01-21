@@ -19,13 +19,13 @@ GetRawButton(10) Right Stick click
 Note: Axes have to be negative
 
 RobotDrive(0, 1)
-Encoder (4, 5) Right wheels (values negative)
-Encoder (2, 3) Left wheels
+Encoder (3, 4) Right wheels (values negative)
+Encoder (1, 2) Left wheels
 
 To equalize motor power, multiply left motor (0) by 1.25.
 
-1ft = Left Encoder (0) ~ -227
-      Right Encoder (1) ~ 369.25
+1ft = Left Encoder (1) ~ -227
+      Right Encoder (3) ~ 369.25
       
 1 ft = ultrasonic = 0.112304
       
