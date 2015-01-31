@@ -16,13 +16,8 @@ GetRawButton(8) Start Button
 GetRawButton(9) Left Stick click
 GetRawButton(10) Right Stick click
 
-Note: Axes have to be negative
-
-RobotDrive(0, 1)
 Encoder (3, 4) Right wheels (values negative)
 Encoder (1, 2) Left wheels
-
-To equalize motor power, multiply left motor (0) by 1.25.
 
 1ft = Left Encoder (1) ~ -227
       Right Encoder (3) ~ 369.25
@@ -33,12 +28,7 @@ Driving set distance using encoders:
       Left: (-227 * FEET) + 80
       Right: (369 * FEET) - 80
       80 makes the distance more precise
-      
-      
 
-drive.setInvertedMotor(MotorType.kRearLeft, true);
-drive.setInvertedMotor(MotorType.kRearRight, false);
--Put in robotInit to correct motors
-
-drive.arcadeDrive(-xbox.getRawAxis(4) , -xbox.getRawAxis(5));
--Drive code
+Window motor - 6
+Wheels - 7
+forward on the wheels draws in
