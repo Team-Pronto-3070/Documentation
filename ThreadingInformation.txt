@@ -1,0 +1,15 @@
+Threading is what we use to circumvent problems with a single
+teleopPeriodic method.
+
+For example, in the teleop method, we have our drive code 
+and a function that enters a while loop to execute some
+task. When we try to execute the while loop and drive at
+the same time, all of the motor settings will be conserved
+while the loop is executing, meaning that if we take
+our hands off the controller while we are in the loop,
+the robot will keep driving until it exits the while loop.
+
+Threading essentially creates multiple teleopPeriodic
+functions that run parallel to each other, so that
+executing one function will run independent of all other
+functions.
