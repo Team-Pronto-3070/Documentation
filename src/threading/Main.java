@@ -1,5 +1,5 @@
 
-package threading.example;
+package threading;
 
 import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.IterativeRobot;

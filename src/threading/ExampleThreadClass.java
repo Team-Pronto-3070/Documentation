@@ -1,10 +1,12 @@
-package threading.example;
+package threading;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.SpeedController;
 
 public class ExampleThreadClass extends Thread {
 	// This is an example class for driving the robot that runs as a thread
+	// Using Threads is not recommended as it has the potential to 
+	// overload the Roborio or CRio and conflict with robot functionality
 	
 	private static final int LEFT_JOYSTICK_Y = 1;
 	private static final int RIGHT_JOYSTICK_Y = 5;
