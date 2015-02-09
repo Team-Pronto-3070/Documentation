@@ -13,3 +13,11 @@ Threading essentially creates multiple teleopPeriodic
 functions that run parallel to each other, so that
 executing one function will run independent of all other
 functions.
+
+DISCLAIMER
+Threading is not recommended as it puts greater strain on
+the Roborio and has the possibilty of overloading and
+freezing the Roborio. 
+
+It is recommended to use State Machines for executing functions
+instead of creating multiple Thread classes.
