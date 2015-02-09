@@ -1,5 +1,5 @@
 
-package basicTankDrive;
+package driveTrains;
 
 import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj.Joystick;
  * Imports only need to be added once in the class.
  */
 
-public class Main extends IterativeRobot {
+public class TankDrive extends IterativeRobot {
 	
 	CANTalon leftMotor, rightMotor;
 	Joystick xbox;
@@ -117,7 +117,14 @@ public class Main extends IterativeRobot {
     	 * with the negative.
     	 */
     	rightMotor.set(xbox.getRawAxis(5));
-        
+    	
+    	/*
+    	 * Something to note is that there is a class, RobotDrive, that
+    	 * will handle many kinds of drive-trains for the robot. It is
+    	 * recommended to use the RobotDrive class over manual if you
+    	 * can help it, as the RobotDrive simplifies the drive code
+    	 * immensely.
+    	 */
     }
     
     /**
