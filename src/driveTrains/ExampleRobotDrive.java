@@ -26,7 +26,6 @@ public class ExampleRobotDrive extends IterativeRobot {
 	 */
 
 	double a, b, c, d;
-
 	// The values we will use for motor input
 
 	/**
@@ -53,11 +52,12 @@ public class ExampleRobotDrive extends IterativeRobot {
 		 * needs all four motors in the parameters.
 		 * 
 		 * Additionally, the RobotDrive class has a built in method for setting
-		 * motors to be inverted. The syntax is called above. Notably, the syntax
-		 * for specifying which motors to invert works independent of what you named
-		 * the motors. The syntax will always be RobotDrive.MotorType.kFrontLeft, where
-		 * kFrontLeft can be replaced with the other three motor options
-		 * (kFrontRight, kRearLeft, kRearRight).
+		 * motors to be inverted. The syntax is called above. Notably, the
+		 * syntax for specifying which motors to invert works independent of
+		 * what you named the motors. The syntax will always be
+		 * RobotDrive.MotorType.kFrontLeft, where kFrontLeft can be replaced
+		 * with the other three motor options (kFrontRight, kRearLeft,
+		 * kRearRight).
 		 */
 
 		arcadeDrive = new RobotDrive(mFrontLeft, mFrontRight);
@@ -128,34 +128,36 @@ public class ExampleRobotDrive extends IterativeRobot {
 
 		arcadeDrive.arcadeDrive(b, c);
 		/*
-		 * Arcade drive drives the robot like a car. The robot can move forward, backward,
-		 * and turn.
+		 * Arcade drive drives the robot like a car. The robot can move forward,
+		 * backward, and turn.
 		 * 
-		 * The arcadeDrive method is called on the desired instance of RobotDrive.
+		 * The arcadeDrive method is called on the desired instance of
+		 * RobotDrive.
 		 * 
 		 * The parameters are the speed the robot drives in the y, and the rate
 		 * the robot should turn.
 		 * 
-		 * In this example, we set the forward/backward movement to be controller by the
-		 * left joystick y-axis, and the turning to be controlled by the right joystick
-		 * x-axis.
+		 * In this example, we set the forward/backward movement to be
+		 * controller by the left joystick y-axis, and the turning to be
+		 * controlled by the right joystick x-axis.
 		 */
 
 		tankDrive.tankDrive(b, d);
 		/*
-		 * There is already documentation for how tank drive works, so I won't describe
-		 * it here, and it's pretty self-explanatory anyway.
+		 * There is already documentation for how tank drive works, so I won't
+		 * describe it here, and it's pretty self-explanatory anyway.
 		 * 
-		 * In this case, the left joystick y-axis controls the left motor, and the right
-		 * joystick y-axis controls the right motor.
+		 * In this case, the left joystick y-axis controls the left motor, and
+		 * the right joystick y-axis controls the right motor.
 		 */
-		
+
 		/*
-		 * This class is purely for example to show how to utilize the RobotDrive class.
-		 * You would never want to call three different RobotDrive instances with three
-		 * different ways of operating them. There is only one drive-train on the robot,
-		 * so only one RobotDrive instance is necessary. You do not want to try to drive
-		 * the robot multiple different ways simultaneously, for obvious reasons.
+		 * This class is purely for example to show how to utilize the
+		 * RobotDrive class. You would never want to call three different
+		 * RobotDrive instances with three different ways of operating them.
+		 * There is only one drive-train on the robot, so only one RobotDrive
+		 * instance is necessary. You do not want to try to drive the robot
+		 * multiple different ways simultaneously, for obvious reasons.
 		 */
 
 	}
