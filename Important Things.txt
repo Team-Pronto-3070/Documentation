@@ -1,0 +1,16 @@
+Connecting to the Roborio Diagnostics page:
+While connected to roborio, in an internet browser url bar, type "roborio-3070.local"
+This will work if you have the roborio properly configured
+
+Location of Roborio Imaging software:
+Will likely be in C:\Program Files (x86)\National Instruments\Labview (year)\project\RoboRIO Tool
+IMAGING THE ROBORIO MUST BE DONE VIA USB CONNECTION
+
+The Bridge Configuration Utility (for setting up the router) can also be found in this path in project
+
+Location of Java installer for the RoboRIO:
+will likely be C:\Users\YOURUSER\wpilib\tools
+
+To connect to the router set-up page after running the bridge configuration utility:
+While connected to the router, type in the web 10.30.70.1
+The main thing you may want to change would be the name of the router for connecting
