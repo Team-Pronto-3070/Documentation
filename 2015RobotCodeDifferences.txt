@@ -1,0 +1,50 @@
+Code Differences Between Robots:
+
+Practice:
+No Camera
+Ramp Rate - 30.0
+NUM_TICKS - 80
+UPPER_LIMIT_ID - 1
+LOWER_LIMIT_ID - 2
+TOTE_LIMIT_ID - 3
+
+PIDMechDrive {
+	rearRight.reverseSensor(true)
+	rearLeft.reverseSensor(false)
+	frontLeft.reverseOutput(true)
+	rearRight.reverseOutput(false)
+
+	drive(double x, double y, double rotation)
+	y = checkForDeadzone(-y);
+}
+
+ProntoLift {
+	motor1.set(-speed)
+	motor2.set(speed)
+}
+
+
+Competition:
+Has Camera
+Ramp Rate - 25.0
+NUM_TICKS - 100
+UPPER_LIMIT_ID - 1
+LOWER_LIMIT_ID - 0
+TOTE_LIMIT_ID - 2
+
+PIDMechDrive {
+	rearRight.reverseSensor(false)
+	rearLeft.reverseSensor(true)
+	frontLeft.reverseOutput(false)
+	rearRight.reverseOutput(true)
+
+	drive(double rotation, double y, double x)
+	y = checkForDeadzone(y);
+}
+
+ProntoLift {
+	motor1.set(-speed)
+	motor2.set(-speed)
+}
+
+
